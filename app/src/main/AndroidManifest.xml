@@ -15,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.BotChat.ChatBotActivity"></activity>
+        <activity android:name=".ui.main.youtubePlayListActivity"></activity>
+        <activity android:name=".ui.BotChat.ChatBotActivity" />
         <activity android:name=".ui.auth.LoginActivity" />
         <activity android:name=".ui.main.HomeActivity" />
         <activity android:name=".ui.SplashScreen">
