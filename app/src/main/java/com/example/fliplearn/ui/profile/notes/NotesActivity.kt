@@ -113,7 +113,6 @@ class NotesActivity : AppCompatActivity() {
                 startActivity(Intent(this, NoteTakingActivity::class.java))
             }
         }
-
         return super.onOptionsItemSelected(item)
     }
 

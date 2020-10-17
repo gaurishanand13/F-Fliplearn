@@ -3,18 +3,16 @@ package com.example.fliplearn.ui.main
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.fliplearn.R
 import com.example.fliplearn.ui.BotChat.ChatBotActivity
+import com.example.fliplearn.ui.TestFragment.TestFragment
 import com.example.fliplearn.ui.auth.LoginActivity
 import com.example.fliplearn.ui.doubts.doubtsFragment
-import com.example.fliplearn.utils.FunctionUtils
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 
@@ -27,10 +25,8 @@ class HomeActivity : AppCompatActivity() {
             when (item.itemId) {
                 R.id.nav_home -> selectedFragment = HomeFragment()
                 R.id.nav_doc -> selectedFragment = doubtsFragment()
-                R.id.nav_favorites, R.id.nav_media -> FunctionUtils().toaster(
-                    "Coming Soon!",
-                    this
-                )
+                R.id.nav_favorites -> selectedFragment =
+                    TestFragment()
                 R.id.nav_profile -> selectedFragment = ProfileFragment()
             }
             supportFragmentManager.beginTransaction().replace(

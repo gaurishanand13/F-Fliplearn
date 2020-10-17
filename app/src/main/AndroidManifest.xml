@@ -15,18 +15,17 @@
         android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.onlineTestActivity.onlineTestActivity"></activity>
         <activity android:name=".ui.profile.notes.NoteTakingActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.profile.notes.NotesActivity" />
         </activity>
-
         <activity android:name=".ui.profile.notes.NotesActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
         <activity android:name=".ui.main.youtubePlayListActivity" />
         <activity android:name=".ui.BotChat.ChatBotActivity" />
         <activity android:name=".ui.auth.LoginActivity" />
@@ -36,6 +35,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
