@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:paddingLeft="10dp"
     android:layout_height="match_parent"
     tools:context=".ui.main.HomeFragment">
 
-    <FrameLayout
-        android:id="@+id/showYoutube"
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="180dp">
+        <TextView
+            android:textColor="@android:color/holo_purple"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:text="Hello Gaurish Anand,"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/holo_purple"
+        android:text="Start Practicing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/coursesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
-</FrameLayout>
+
+</LinearLayout>
