@@ -63,28 +63,45 @@ public class Constants {
 
     public static ArrayList<doubtsModel> getDoubts(){
         ArrayList<doubtsModel> doubts = new ArrayList<>();
-        doubts.add(new doubtsModel("100","Liam Beiber","Chemistry",null, R.drawable.question_one,R.drawable.person_one));
-        doubts.add(new doubtsModel("50","James Pattinson","Physics","Calculate the force of attraction between two bodies with their mass 100kg each and they are 1m apart on the surface of the earth . Will the force of attraction be different Ir the same bodies are taken on the moon, their separation remaining constant?",null,R.drawable.person_two));
-        doubts.add(new doubtsModel("20","Emma Sharma","Mathematics","Three normals to the parabola y^2 = x are drawn through a point (C, 0), then minimum value of C is 1/k. Find k",null,R.drawable.girl_two));
-        doubts.add(new doubtsModel("150","Isabella karra","General",null,R.drawable.question_two,R.drawable.girl_one));
-        doubts.add(new doubtsModel("100","Liam Beiber","Chemistry","Can someone explain how to test the presence of sulphates in hard water?",null,R.drawable.person_one));
+        doubts.add(new doubtsModel("100","Liam Beiber","Chemistry",null, R.drawable.question_one,R.drawable.person_one,null));
+        doubts.add(new doubtsModel("50","James Pattinson","Physics","Calculate the force of attraction between two bodies with their mass 100kg each and they are 1m apart on the surface of the earth . Will the force of attraction be different Ir the same bodies are taken on the moon, their separation remaining constant?",null,R.drawable.person_two,null));
+        doubts.add(new doubtsModel("20","Emma Sharma","Mathematics","Three normals to the parabola y^2 = x are drawn through a point (C, 0), then minimum value of C is 1/k. Find k",null,R.drawable.girl_two,null));
+        doubts.add(new doubtsModel("150","Isabella karra","General",null,R.drawable.question_two,R.drawable.girl_one,null));
+        doubts.add(new doubtsModel("100","Liam Beiber","Chemistry","Can someone explain how to test the presence of sulphates in hard water?",null,R.drawable.person_one,null));
         doubts.add(new doubtsModel("80","James Pattinson","Physics","A wire of length 3 m and area of cross-section 1.7 × 10-6 m2 has a resistance 3 × 10-2 ohm.\n" +
                 "a. What is the formula for resistivity of the wire and what is the unit of it\n" +
-                "b. Calculate the resistivity of the wire",null,R.drawable.person_two));
+                "b. Calculate the resistivity of the wire",null,R.drawable.person_two,null));
         return doubts;
     }
 
     public static String[] botAnswers = {
-            "Hey! How may I help you?",
-            "I want to start coding, can you please help how shall i start?",
-            "Are you good at mathematics?",
-            "Not that great! , but yes i can try",
-            "Try probability module - \nModule 1 1\nModule 2",
-            "Ok! How much time will be sufficient to learn it?",
-            "If you complete the modules in less than 10 days! then you get 150 coins",
-            "What if i am not able to complete it in 10 days?",
-            "In that case , you may not win coins",
-            "Okay, thankyou bott",
-            "Hope you have a great day"
+            "Hey how may I help?",
+            "I want to learn coding",
+            "You can try these courses…\n" +
+                    "Course 1\n" +
+                    "Course 2\n" +
+                    "Course 3",
+            "Ok, Cool...",
+            "Is there something else I can help you with ?",
+            "What test should I attempt next?",
+            "These are the recommended tests based on your recent performance\n" +
+                    "Test 1\n" +
+                    "Test 2\n" +
+                    "Test 3",
+            "Great. Thanks",
+            "Glad to help...\n" +
+                    "Is there something else I can help you with ?",
+            "Can I get some feedback on my recent performance?",
+            "Your recent test scores are\n" +
+                    "Physics - 84%\n" +
+                    "Mathematics - 80%\n" +
+                    "Your strong topics are\n" +
+                    "Physics - Electrostatics, Magnetism, Gravitation\n" +
+                    "Mathematics - \n" +
+                    "Your weak topics\n" +
+                    "Physics - Kinematics, Friction\n" +
+                    "Maths - Quadratic Equation",
+            "Thank you\n",
+            "Is there something else I can help you with ?"
     };
 }
