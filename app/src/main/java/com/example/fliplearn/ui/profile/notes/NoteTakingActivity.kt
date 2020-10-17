@@ -1,5 +1,6 @@
 package com.example.fliplearn.ui.profile.notes
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.util.DisplayMetrics
 import android.view.Menu
@@ -7,6 +8,8 @@ import android.view.MenuItem
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.fliplearn.R
+import com.google.gson.Gson
+
 
 class NoteTakingActivity : AppCompatActivity() {
     private var paintView: PaintView? = null
@@ -31,6 +34,10 @@ class NoteTakingActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
+            R.id.save -> {
+                Toast.makeText(this, "", Toast.LENGTH_SHORT).show()
+                return true
+            }
             R.id.pen -> {
                 paintView!!.pen()
                 Toast.makeText(this, "Pen Active!", Toast.LENGTH_SHORT).show()
