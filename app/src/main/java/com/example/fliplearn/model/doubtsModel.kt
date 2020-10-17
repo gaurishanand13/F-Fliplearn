@@ -1,6 +1,7 @@
 package com.example.fliplearn.model
 
 import android.graphics.drawable.Drawable
+import android.net.Uri
 import com.example.fliplearn.R
 
 data class doubtsModel(
@@ -9,6 +10,7 @@ data class doubtsModel(
     val subject : String,
     val text : String?,
     val drawable : Int?,
-    val profile : Int
+    val profile : Int,
+    val uri  : Uri?
 )
 

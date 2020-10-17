@@ -30,17 +30,32 @@ class doubtsAdapter(val list: ArrayList<doubtsModel>,val context: Context?): Rec
         holder.itemView.doubtProfileImage.setImageResource(list.get(position).profile)
         holder.itemView.doubtName.text = list.get(position).name
         holder.itemView.doubtSubject.text = list.get(position).subject
+
+
         if(list.get(position).text!=null){
             holder.itemView.doubtTextView.text = list.get(position).text
         }
         else{
             holder.itemView.doubtTextView.visibility = View.GONE
         }
+
         if(list.get(position).drawable!=null){
             holder.itemView.doubtImageView.setImageResource(list.get(position).drawable!!)
+        }
+        else if(list.get(position).uri!=null){
+            Picasso.get().load(list.get(position).uri).into(holder.itemView.doubtImageView)
         }
         else{
             holder.itemView.doubtImageView.visibility = View.GONE
         }
+    }
+
+    fun addList(x : doubtsModel){
+        val newList = ArrayList<doubtsModel>()
+        newList.addAll(list)
+        list.clear();
+        list.add(x)
+        list.addAll(newList)
+        notifyDataSetChanged()
     }
 }
