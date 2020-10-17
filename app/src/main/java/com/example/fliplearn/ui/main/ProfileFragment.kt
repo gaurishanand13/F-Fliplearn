@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.fliplearn.R
 import com.example.fliplearn.ui.auth.LoginActivity
-import com.example.fliplearn.utils.FunctionUtils
+import com.example.fliplearn.ui.profile.notes.NotesActivity
 import com.google.android.material.card.MaterialCardView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_profile.view.*
@@ -22,29 +22,24 @@ class ProfileFragment : Fragment() {
         super.onCreate(savedInstanceState)
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val v =  inflater.inflate(R.layout.fragment_profile, container, false)
-        v.cardSettings.setOnClickListener(View.OnClickListener { upload: View? ->
-                FunctionUtils().toaster(
-                    "Coming Soon!",
-                    context!!
-                )
-            })
-        v.cardSavedPosts.setOnClickListener(View.OnClickListener { doc: View? ->
-                FunctionUtils().toaster(
-                    "Coming Soon!",
-                    context!!
-                )
-            })
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        val v = inflater.inflate(R.layout.fragment_profile, container, false)
         v.ivLogout.setOnClickListener(View.OnClickListener { logout: View? ->
-                FirebaseAuth.getInstance().signOut()
-                startActivity(Intent(context, LoginActivity::class.java))
-                activity!!.finish()
-            })
-        aboutus = v.findViewById(R.id.cardAbout)
-        aboutus!!.setOnClickListener({ v1 ->
-            //Start the about us Activity
+            FirebaseAuth.getInstance().signOut()
+            startActivity(Intent(context, LoginActivity::class.java))
+            activity!!.finish()
         })
+        aboutus = v.findViewById(R.id.cardAbout)
+        aboutus!!.setOnClickListener { v1 ->
+            //Start the about us Activity
+        }
+        v.clnotes.setOnClickListener {
+            startActivity(Intent(context, NotesActivity::class.java))
+        }
 
         return v
     }

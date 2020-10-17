@@ -1,4 +1,4 @@
-package com.example.fliplearn.ui
+package com.example.fliplearn.ui.auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +16,6 @@ class SplashScreen : AppCompatActivity() {
         handler.postDelayed({
             startActivity(Intent(this, HomeActivity::class.java))
             finish()
-        }, 2000)
+        }, 500)
     }
 }
