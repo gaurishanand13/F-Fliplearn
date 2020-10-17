@@ -24,7 +24,7 @@
         android:layout_marginTop="32dp"
         android:drawableEnd="@drawable/ic_coins_small"
         android:drawablePadding="4sp"
-        android:text="Coins : 89"
+        android:text="Coins : 11635"
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
         android:textColor="@color/blackText"
         android:textStyle="bold"
@@ -180,6 +180,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvPlace">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clcoins"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="?attr/selectableItemBackgroundBorderless"

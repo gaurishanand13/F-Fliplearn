@@ -8,9 +8,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.fliplearn.R
 import com.example.fliplearn.ui.auth.LoginActivity
+import com.example.fliplearn.ui.profile.coins.CoinTransactionActivity
 import com.example.fliplearn.ui.profile.notes.NotesActivity
 import com.google.android.material.card.MaterialCardView
 import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.fragment_profile.*
 import kotlinx.android.synthetic.main.fragment_profile.view.*
 
 
@@ -33,6 +35,9 @@ class ProfileFragment : Fragment() {
             startActivity(Intent(context, LoginActivity::class.java))
             activity!!.finish()
         })
+        v.clcoins.setOnClickListener {
+            startActivity(Intent(context, CoinTransactionActivity::class.java))
+        }
         aboutus = v.findViewById(R.id.cardAbout)
         aboutus!!.setOnClickListener { v1 ->
             //Start the about us Activity
