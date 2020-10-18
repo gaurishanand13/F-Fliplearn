@@ -15,7 +15,10 @@
         android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity android:name=".ui.onlineTestActivity.onlineTestActivity"></activity>
         <activity android:name=".ui.profile.coins.CoinTransactionActivity"></activity>
+
         <activity android:name=".ui.profile.notes.NoteTakingActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

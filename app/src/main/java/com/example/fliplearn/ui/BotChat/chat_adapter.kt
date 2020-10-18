@@ -17,8 +17,6 @@ import kotlin.collections.ArrayList
 
 class chatAdapter(val list: ArrayList<String>,val timeList : ArrayList<String>): RecyclerView.Adapter<viewHolder>() {
 
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
         val layoutInflater = parent.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         var view = layoutInflater.inflate(R.layout.chat_item,parent,false)
