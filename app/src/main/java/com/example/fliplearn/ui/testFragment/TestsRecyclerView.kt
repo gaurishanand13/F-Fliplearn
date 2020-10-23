@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fliplearn.R
 import com.example.fliplearn.ui.main.ViewHolder
-import com.example.fliplearn.ui.onlineTestActivity.OnlineTestActivity
+import com.example.fliplearn.ui.onlineTestActivity.onlineTestActivity
 import kotlinx.android.synthetic.main.test_item.view.*
 import kotlin.collections.ArrayList
 
@@ -25,7 +25,7 @@ class TestsRecyclerView(val list: ArrayList<testModel>, val context: Context): R
         holder.itemView.testTextView.text = list.get(position).testName
         holder.itemView.testImageView.setImageResource(list.get(position).res)
         holder.itemView.setOnClickListener {
-            context.startActivity(Intent(context,OnlineTestActivity::class.java))
+            context.startActivity(Intent(context,onlineTestActivity::class.java))
         }
     }
 }

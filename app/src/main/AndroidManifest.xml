@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ui.onlineTestActivity.OnlineTestActivity" />
+        <activity android:name=".ui.onlineTestActivity.onlineTestActivity" />
         <activity android:name=".ui.profile.coins.CoinTransactionActivity" />
 
         <activity android:name=".ui.profile.notes.NoteTakingActivity">
