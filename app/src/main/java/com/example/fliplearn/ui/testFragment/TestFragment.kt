@@ -1,4 +1,4 @@
-package com.example.fliplearn.ui.TestFragment
+package com.example.fliplearn.ui.testFragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -22,10 +22,10 @@ class TestFragment : Fragment() {
         view.recyclerView_three.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
         view.recyclerView_four.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
 
-        view.recyclerView_one.adapter = testAdapter(myObj.getMathsList(),context!!)
-        view.recyclerView_two.adapter = testAdapter(myObj.getComputerList(),context!!)
-        view.recyclerView_three.adapter = testAdapter(myObj.getPhysicsList(),context!!)
-        view.recyclerView_four.adapter = testAdapter(myObj.getChemistryList(),context!!)
+        view.recyclerView_one.adapter = TestsRecyclerView(myObj.getMathsList(),context!!)
+        view.recyclerView_two.adapter = TestsRecyclerView(myObj.getComputerList(),context!!)
+        view.recyclerView_three.adapter = TestsRecyclerView(myObj.getPhysicsList(),context!!)
+        view.recyclerView_four.adapter = TestsRecyclerView(myObj.getChemistryList(),context!!)
         return view
 
     }

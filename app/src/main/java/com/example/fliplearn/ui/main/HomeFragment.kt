@@ -5,14 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.HorizontalScrollView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fliplearn.R
-import com.example.fliplearn.ui.TestFragment.myObj
-import com.example.fliplearn.ui.TestFragment.testAdapter
+import com.example.fliplearn.ui.testFragment.myObj
+import com.example.fliplearn.ui.testFragment.TestsRecyclerView
 import com.example.fliplearn.ui.profile.notes.NotesAdapter
 import com.example.fliplearn.ui.profile.notes.NotesData
-import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
 
@@ -92,13 +90,13 @@ class HomeFragment : Fragment() {
          * Setting up the course Adapter
          */
         view.coursesRecyclerView.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
-        view.coursesRecyclerView.adapter = coursesAdapter(context!!)
+        view.coursesRecyclerView.adapter = CoursesAdapter(context!!)
 
 
         view.notesRecyclerView.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
         view.testRecyclerView.layoutManager = LinearLayoutManager(context,LinearLayoutManager.HORIZONTAL,false)
 
-        view.testRecyclerView.adapter = testAdapter(myObj.getRandomTest(),context!!)
+        view.testRecyclerView.adapter = TestsRecyclerView(myObj.getRandomTest(),context!!)
         view.notesRecyclerView.adapter = NotesAdapter(context!!, initData())
         return view
     }

@@ -1,4 +1,4 @@
-package com.example.fliplearn.ui.TestFragment
+package com.example.fliplearn.ui.testFragment
 
 import com.example.fliplearn.R
 import com.example.fliplearn.model.onlineTest
