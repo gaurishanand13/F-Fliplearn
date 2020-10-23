@@ -7,14 +7,14 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="130dp"
+        android:layout_width="80dp"
         android:id="@+id/imageView"
         android:src="@drawable/history"
-        android:layout_height="130dp"/>
+        android:layout_height="80dp"/>
     <TextView
         android:id="@+id/textView"
         android:layout_marginTop="5dp"
-        android:textSize="17sp"
+        android:textSize="15sp"
         android:textColor="@android:color/black"
         android:text="Mathematics"
         android:layout_width="wrap_content"

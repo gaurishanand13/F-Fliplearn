@@ -10,19 +10,19 @@ import com.example.fliplearn.R
 import com.example.fliplearn.model.Constants
 import kotlinx.android.synthetic.main.course_adapter_item.view.*
 
-class viewHolder(itemView : View) : RecyclerView.ViewHolder(itemView)
+class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView)
 
-class coursesAdapter(val context: Context): RecyclerView.Adapter<viewHolder>() {
+class CoursesAdapter(val context: Context): RecyclerView.Adapter<ViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = parent.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         var view = layoutInflater.inflate(R.layout.course_adapter_item,parent,false)
-        return viewHolder(view)
+        return ViewHolder(view)
     }
 
     override fun getItemCount() = Constants.coursesAvailable.size
 
-    override fun onBindViewHolder(holder: viewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.itemView.textView.text = Constants.coursesAvailable.get(position)
         if(position==0){
             holder.itemView.imageView.setImageResource(R.drawable.mathematics)

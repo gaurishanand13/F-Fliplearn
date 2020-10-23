@@ -14,17 +14,17 @@ public interface youtube_adapter_interface{
     fun onClick(position: Int)
 }
 
-class youtubeViewAdapter(val context: Context,val myInterface : youtube_adapter_interface): RecyclerView.Adapter<viewHolder>() {
+class youtubeViewAdapter(val context: Context,val myInterface : youtube_adapter_interface): RecyclerView.Adapter<ViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = parent.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         var view = layoutInflater.inflate(R.layout.youtube_view_item,parent,false)
-        return viewHolder(view)
+        return ViewHolder(view)
     }
 
     override fun getItemCount() = Constants.mathsVideos.size
 
-    override fun onBindViewHolder(holder: viewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.itemView.youtubeListTextView.text = Constants.mathsTitle.get(position)
         Picasso.get().load("https://img.youtube.com/vi/" + Constants.mathsVideos.get(position) + "/0.jpg").into(holder.itemView.imageView);
         holder.itemView.setOnClickListener {

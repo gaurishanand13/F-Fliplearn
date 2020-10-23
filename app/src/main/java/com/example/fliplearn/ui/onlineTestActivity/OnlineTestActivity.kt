@@ -1,7 +1,6 @@
 package com.example.fliplearn.ui.onlineTestActivity
 
 import android.app.AlertDialog
-import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
@@ -11,19 +10,13 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.Window
-import android.widget.Toast
 import com.example.fliplearn.R
-import com.example.fliplearn.R.color
-import com.example.fliplearn.model.doubtsModel
 import com.example.fliplearn.model.onlineTest
-import com.example.fliplearn.ui.TestFragment.myObj
-import com.jaredrummler.materialspinner.MaterialSpinner
+import com.example.fliplearn.ui.testFragment.myObj
 import kotlinx.android.synthetic.main.activity_online_test.*
-import kotlinx.android.synthetic.main.doubts_alert_dialog.view.*
 import kotlinx.android.synthetic.main.test_score.view.*
-import java.util.*
 
-class onlineTestActivity : AppCompatActivity() {
+class OnlineTestActivity : AppCompatActivity() {
 
 
     var current = 0

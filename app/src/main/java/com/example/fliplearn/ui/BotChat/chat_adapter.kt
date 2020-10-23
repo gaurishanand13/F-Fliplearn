@@ -7,25 +7,24 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fliplearn.R
-import com.example.fliplearn.model.Constants
-import com.example.fliplearn.ui.main.viewHolder
+import com.example.fliplearn.ui.main.ViewHolder
 import kotlinx.android.synthetic.main.chat_item.view.*
 import java.text.SimpleDateFormat
 import java.util.*
 import kotlin.collections.ArrayList
 
 
-class chatAdapter(val list: ArrayList<String>,val timeList : ArrayList<String>): RecyclerView.Adapter<viewHolder>() {
+class chatAdapter(val list: ArrayList<String>,val timeList : ArrayList<String>): RecyclerView.Adapter<ViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): viewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = parent.context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         var view = layoutInflater.inflate(R.layout.chat_item,parent,false)
-        return viewHolder(view)
+        return ViewHolder(view)
     }
 
     override fun getItemCount() = list.size
 
-    override fun onBindViewHolder(holder: viewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         if(position%2==0){
             //It means message is from the bot, therefore hide personTextView
             holder.itemView.personLinearLayout.visibility = View.GONE

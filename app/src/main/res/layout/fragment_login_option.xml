@@ -58,7 +58,7 @@
         style="@style/BodyText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Minimizing the spread of infections by going paperless.\n Using Machine Learning to monitor public surveillance cameras"
+        android:text="Personalised Education Platform for each and every student"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="@+id/tvHeader"
         app:layout_constraintHorizontal_bias="0.0"

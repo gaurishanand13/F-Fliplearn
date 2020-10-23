@@ -6,13 +6,11 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.net.Uri
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.ImageView
-import android.widget.Spinner
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -32,7 +30,7 @@ class doubtsFragment : Fragment() {
 
     var uri : Uri? = null
     var imageView : ImageView? = null
-    var adapter : doubtsAdapter? = null
+    var adapter : DoubtsAdapter? = null
 
     val list = Constants.getDoubts()
 
@@ -95,7 +93,7 @@ class doubtsFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view =  inflater.inflate(R.layout.fragment_doubts, container, false)
         view.doubtsRecyclerView.layoutManager = LinearLayoutManager(context)
-        adapter = doubtsAdapter(list,context)
+        adapter = DoubtsAdapter(list,context)
         view.doubtsRecyclerView.adapter = adapter
         view.floatingActionButton.setOnClickListener {
             showAlertDialog()

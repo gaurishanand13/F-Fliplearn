@@ -4,9 +4,11 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.os.postDelayed
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.fliplearn.R
 import com.example.fliplearn.model.Constants
+import com.example.fliplearn.utils.FunctionUtils
 import kotlinx.android.synthetic.main.activity_chat_bot.*
 
 class ChatBotActivity : AppCompatActivity() {
@@ -18,7 +20,7 @@ class ChatBotActivity : AppCompatActivity() {
         val list = ArrayList<String>()
         val timeList = ArrayList<String>()
         chatBotRecylerView.layoutManager = LinearLayoutManager(this)
-        val adapter = chatAdapter(list,timeList)
+        val adapter = chatAdapter(list, timeList)
         chatBotRecylerView.adapter = adapter
 
         adapter.updateListAdd(Constants.botAnswers.get(0))
@@ -26,20 +28,20 @@ class ChatBotActivity : AppCompatActivity() {
 
         sendButton.setOnClickListener {
             val text = textMessageBox.text.toString()
-            if(!text.isEmpty()){
+            if (!text.isEmpty()) {
                 adapter.updateListAdd(text)
                 chatBotRecylerView.smoothScrollToPosition(size);
                 size++;
                 textMessageBox.setText("")
                 myGif.visibility = View.VISIBLE
-                Handler().postDelayed(object : Runnable{
+                Handler().postDelayed(object : Runnable {
                     override fun run() {
                         myGif.visibility = View.GONE
                         adapter.updateListAdd(Constants.botAnswers.get(size))
                         chatBotRecylerView.smoothScrollToPosition(list.size);
                         size++;
                     }
-                },1000)
+                }, FunctionUtils().getRandomNumber(1500, 2200).toLong())
             }
         }
     }

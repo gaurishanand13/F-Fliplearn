@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.fliplearn.R
 import com.example.fliplearn.ui.BotChat.ChatBotActivity
-import com.example.fliplearn.ui.TestFragment.TestFragment
+import com.example.fliplearn.ui.testFragment.TestFragment
 import com.example.fliplearn.ui.auth.LoginActivity
 import com.example.fliplearn.ui.doubts.doubtsFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
