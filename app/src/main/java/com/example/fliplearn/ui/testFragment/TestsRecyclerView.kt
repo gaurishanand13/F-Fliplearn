@@ -25,7 +25,7 @@ class TestsRecyclerView(val list: ArrayList<testModel>, val context: Context): R
         holder.itemView.testTextView.text = list.get(position).testName
         holder.itemView.testImageView.setImageResource(list.get(position).res)
         holder.itemView.setOnClickListener {
-            context.startActivity(Intent(context,onlineTestActivity::class.java))
+            context.startActivity(Intent(context,subjectiveAnalysis::class.java))
         }
     }
 }

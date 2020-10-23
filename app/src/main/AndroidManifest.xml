@@ -15,10 +15,9 @@
         android:roundIcon="@drawable/app_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".ui.testFragment.subjectiveAnalysis"></activity>
         <activity android:name=".ui.onlineTestActivity.onlineTestActivity" />
         <activity android:name=".ui.profile.coins.CoinTransactionActivity" />
-
         <activity android:name=".ui.profile.notes.NoteTakingActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -30,8 +29,9 @@
                 android:value=".MainActivity" />
         </activity>
         <activity android:name=".ui.main.youtubePlayListActivity" />
-        <activity android:name=".ui.BotChat.ChatBotActivity"
-            android:label="@string/assistant"/>
+        <activity
+            android:name=".ui.BotChat.ChatBotActivity"
+            android:label="@string/assistant" />
         <activity android:name=".ui.auth.LoginActivity" />
         <activity android:name=".ui.main.HomeActivity" />
         <activity
