@@ -13,7 +13,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="190dp"
             android:src="@drawable/main" />
 
         <TextView
@@ -22,16 +22,16 @@
             android:paddingStart="5dp"
             android:text="Hello Gaurish Anand,"
             android:textColor="@android:color/holo_purple"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:paddingStart="5dp"
-            android:text="Start Learning"
+            android:layout_marginTop="8dp"
+            android:paddingStart="15dp"
+            android:text="Start Learning 👇"
             android:textColor="@android:color/holo_purple"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/coursesRecyclerView"
@@ -42,10 +42,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:paddingStart="5dp"
-            android:text="Practice tests on your weak topics"
+            android:paddingStart="15dp"
+            android:text="Practice tests on your weak topics 👇 "
             android:textColor="@android:color/holo_purple"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/testRecyclerView"
@@ -56,10 +56,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:paddingStart="5dp"
-            android:text="Your Notes"
+            android:paddingStart="15dp"
+            android:text="Your Notes 👇 "
             android:textColor="@android:color/holo_purple"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/notesRecyclerView"

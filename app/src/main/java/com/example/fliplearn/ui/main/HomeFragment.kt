@@ -33,7 +33,7 @@ class HomeFragment : Fragment() {
         listOfNotes!!.add(
             NotesData(
                 "https://firebasestorage.googleapis.com/v0/b/fliplearn-595fd.appspot.com/o/notes%2FIMG_0100.jpg?alt=media&token=ba39bea0-3ac1-455f-8a0e-329844f0622c",
-                "Graph of Tan(θ) practice",
+                "Graph of Tan(θ) practice\n",
                 "5 Aug 2020"
             )
         )

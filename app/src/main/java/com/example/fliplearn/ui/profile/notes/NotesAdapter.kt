@@ -29,7 +29,7 @@ class NotesAdapter(val context: Context, val notes: ArrayList<NotesData>) :
     @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         Glide.with(context).load(notes[position].imgUrl).into(holder.image)
-        holder.title.text = notes[0].title.toString()
+        holder.title.text = notes[position].title.toString()
         holder.updated.text = "Updated: ${notes[0].updated.toString()}"
         holder.itemView.setOnClickListener {
             openNoteTaking(notes[position].imgUrl)

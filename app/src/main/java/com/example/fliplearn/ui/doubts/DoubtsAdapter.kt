@@ -25,7 +25,7 @@ class DoubtsAdapter(val list: ArrayList<doubtsModel>, val context: Context?) :
     override fun getItemCount() = list.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.itemView.doubtCoinsAdded.text = list.get(position).coins
+        holder.itemView.doubtCoinsAdded.text = "+${list.get(position).coins}"
         holder.itemView.doubtProfileImage.setImageResource(list.get(position).profile)
         holder.itemView.doubtName.text = list.get(position).name
         holder.itemView.doubtSubject.text = list.get(position).subject
