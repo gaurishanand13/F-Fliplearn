@@ -77,17 +77,16 @@ public class Constants {
     public static String[] botAnswers = {
             "Hey how may I help?",
             "I want to learn coding",
-            "You can try these courses…\n" +
-                    "Course 1\n" +
-                    "Course 2\n" +
-                    "Course 3",
+            "You can try these courses present on platform…\n" +
+                    "1. Basic Coding using C++\n" +
+                    "2. Coding for babies\n",
             "Ok, Cool...",
             "Is there something else I can help you with ?",
             "What test should I attempt next?",
-            "These are the recommended tests based on your recent performance\n" +
-                    "Test 1\n" +
-                    "Test 2\n" +
-                    "Test 3",
+            "These are the recommended tests based on your recent performance (provided on home)\n" +
+                    "Friction Test 1.2\n" +
+                    "Kinematics Test 1.3 \n" +
+                    "Work Energy, Test 2.1",
             "Great. Thanks",
             "Glad to help...\n" +
                     "Is there something else I can help you with ?",
