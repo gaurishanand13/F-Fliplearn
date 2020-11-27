@@ -86,25 +86,21 @@ This section should list any major frameworks that you built your project using.
 
 
 ### App Screenshots
-| <img src="images/ss1.png" alt="Logo" width="220" height="420"> | <img src="images/ss2.png" alt="Logo" width="220" height="420"> | <img src="images/ss3.png" alt="Logo" width="220" height="420"> |
+| <img src="images/ss1.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss2.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss3.jpg" alt="Logo" width="220" height="420"> |
 |:---:|:---:|:---:|
 | Farmer's Inventory | Add Crops to sell | Crop Quality Prediction |
 
-| <img src="images/ss4.png" alt="Logo" width="220" height="420"> | <img src="images/ss5.png" alt="Logo" width="220" height="420"> | <img src="images/ss6.png" alt="Logo" width="220" height="420"> |
+| <img src="images/ss4.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss5.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss6.jpg" alt="Logo" width="220" height="420"> |
 |:---:|:---:|:---:|
 | Wheat/Rice Quality | Farmer's Profile | Predicted Quality By ML model |
 
-| <img src="images/ss7.png" alt="Logo" width="220" height="420"> | <img src="images/ss8.png" alt="Logo" width="220" height="420"> | <img src="images/ss9.png" alt="Logo" width="220" height="420"> |
+| <img src="images/ss7.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss8.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss9.jpg" alt="Logo" width="220" height="420"> |
 |:---:|:---:|:---:|
-| Weather Updates | Search a feature | Information Section |
+| Fliplearn Assistant's Course Recommendation | Fliplearn Assistant's Test Recommendation | Courses Videos |
 
-| <img src="images/ss10.png" alt="Logo" width="220" height="420"> | <img src="images/ss11.png" alt="Logo" width="220" height="420"> | <img src="images/ss12.png" alt="Logo" width="220" height="420"> |
+| <img src="images/ss10.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss11.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss12.jpg" alt="Logo" width="220" height="420"> |
 |:---:|:---:|:---:|
-| Farmer's Earning Wallet | Navigation Drawer Options | Loan Ledger |
-
-| <img src="images/ss13.png" alt="Logo" width="220" height="420"> | <img src="images/ss14.png" alt="Logo" width="220" height="420"> | <img src="images/ss15.png" alt="Logo" width="220" height="420"> |
-|:---:|:---:|:---:|
-| Soil Testing Labs | Farmer's Credit Score | Maps to connect buyer/seller |
+| Flipcoin's Transaction | Fliplearn Notes | Make your Note |
 
 
 
