@@ -88,7 +88,7 @@ This section should list any major frameworks that you built your project using.
 ### App Screenshots
 | <img src="images/ss1.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss2.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss3.jpg" alt="Logo" width="220" height="420"> |
 |:---:|:---:|:---:|
-| Farmer's Inventory | Add Crops to sell | Crop Quality Prediction |
+| Home | Doubt Section | Asking a Doubt |
 
 | <img src="images/ss4.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss5.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss6.jpg" alt="Logo" width="220" height="420"> |
 |:---:|:---:|:---:|
