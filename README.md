@@ -92,11 +92,11 @@ This section should list any major frameworks that you built your project using.
 
 | <img src="images/ss4.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss5.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss6.jpg" alt="Logo" width="220" height="420"> |
 |:---:|:---:|:---:|
-| Wheat/Rice Quality | Farmer's Profile | Predicted Quality By ML model |
+| Live tests for students | Student's Profile | Attempting a test |
 
 | <img src="images/ss7.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss8.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss9.jpg" alt="Logo" width="220" height="420"> |
 |:---:|:---:|:---:|
-| Fliplearn Assistant's Course Recommendation | Fliplearn Assistant's Test Recommendation | Courses Videos |
+| Course Recommendation | Test Recommendation | Courses Videos |
 
 | <img src="images/ss10.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss11.jpg" alt="Logo" width="220" height="420"> | <img src="images/ss12.jpg" alt="Logo" width="220" height="420"> |
 |:---:|:---:|:---:|
