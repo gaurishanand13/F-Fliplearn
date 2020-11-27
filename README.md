@@ -148,10 +148,9 @@ Shivam Kumar - [@shivamkumard107](https://www.linkedin.com/in/shivam-kumar-a9aa9
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Smart India Hackathon](https://www.sih.gov.in/)
-* [Pranav Sharma](https://github.com/pragmatist-strategist)
-* [Mohit Ranjan](https://github.com/MohitR1999)
-* [Flaticons](https://www.flaticon.com/)
+* [Gaurish Anand](https://github.com/gaurishanand13)
+* [Chirag Singla](https://github.com/chiragsingla17)
+
 
 
 
