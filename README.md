@@ -72,9 +72,7 @@ A voice enabled bot that gives personalized test/course recommendations and prov
 #### Online Examination Proctoring using AI
 Due to the pandemic, the education is completely virtual. There is no fool proof platform to proctor students in online examination. So an attempt is made to solve this.
 
-#### Gamification of platform by rewarding flip coins to increase student engagement
-
-
+#### Gamification of platform by rewarding flip coins to increase student engagement. Eg. rewarding students flipcoins if they solve doubts of other students.
 
 
 ### Built With
@@ -167,5 +165,5 @@ Shivam Kumar - [@shivamkumard107](https://www.linkedin.com/in/shivam-kumar-a9aa9
 [license-shield]: https://img.shields.io/github/license/shivamkumard107/KisanSeva2.svg?style=flat-square
 [license-url]: https://github.com/shivamkumard107/KisanSeva2/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/in/shivam-kumar-a9aa96131/
+[linkedin-url]: https://www.linkedin.com/in/gaurish-anand-b84393a7/
 [product-screenshot]: images/icon.svg
