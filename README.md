@@ -34,7 +34,7 @@
   <h3 align="center">Fliplearn Hackathon 2020</h3>
 
   <p align="center">
-     Problem Statement: Lack of technological intervention in value addition of agricultural products produced by SHGs/FPGs
+     Problem Statement: EdTech - Build the Future of Education using Technology
     <br />
     <a href="https://github.com/gaurishanand13/F-Fliplearn"><strong>Explore the docs »</strong></a>
     <br />
